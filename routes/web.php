@@ -13,9 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+
+Route::get('/',[
+   'uses' => 'DefaultController@index',
+   'as' => '/'
+]);
 
 
 Route::group(['prefix' => 'admin'], function () {

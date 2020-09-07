@@ -68,7 +68,7 @@
 {{--        {{menu('main','bootstrap')}}--}}
         <br/>
         <div class="content">
-            <div class="title">
+            <div class="title m-b-md">
                 {{setting('site.title')}}
             </div>
             <img src="{{Voyager::image(setting('site.logo'))}}" alt="">
